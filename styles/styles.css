@@ -1,0 +1,235 @@
+html::after {
+  content: "";
+  display: block;
+  position: fixed;
+  left: -32px;
+  top: 0;
+  width: calc(100% + 32px);
+  height: calc(100% + 32px);
+  background-image: url("../scanlines.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+  z-index: 10000000;
+  animation: ScanlineAnimationRight 0.4s linear infinite;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+@keyframes ScanlineAnimationLeft {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(-32px) translateY(-32px);
+  }
+}
+
+@keyframes ScanlineAnimationRight {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(32px) translateY(-32px);
+  }
+}
+
+@font-face {
+  font-family: Iosevka;
+  src: url("../iosevka-aile-bold.woff2");
+}
+
+@font-face {
+  font-family: ArcadeClassic;
+  src: url("../ARCADECLASSIC.woff2");
+}
+
+::-webkit-scrollbar {
+  display: none;
+} /* chrome */
+
+::-ms-overflow-style {
+  display: none;
+} /* IE and Edge */
+
+::scrollbar-width {
+  display: none;
+} /* Firefox */
+
+html {
+  background-image: url("../bg205.gif");
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 920px;
+  border: solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-color: rgb(255, 237, 192);
+}
+
+.main .table .table_body {
+  height: 90px;
+}
+
+.main .table .table_head {
+  border: 1px solid rgb(255, 237, 192);
+  height: 96px;
+  text-align: center;
+}
+
+.main .table .table_nav {
+  text-align: center;
+}
+
+.main .table .table_center {
+  background-image: url("../Static2.gif");
+  color: white;
+  display: flex;
+  padding: 20px;
+}
+
+.border {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  background-image: url("../bg205.gif");
+}
+
+.border h2 {
+  border: 1px solid white;
+  padding: 10px 5px;
+}
+
+.table_center_right td {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rectangle {
+  background-image: url("../bg205.gif");
+  width: auto;
+  padding: 20px;
+}
+
+.sm_rectangle {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+}
+
+.smaller_rectangle {
+  width: 300px;
+  padding: 10px;
+}
+.font {
+  font-family: Iosevka;
+  font-size: medium;
+}
+.image {
+  width: 125px;
+  height: 125px;
+}
+
+#slideshow {
+  padding: 0px;
+  width: 660px;
+  font-family: ArcadeClassic;
+  font-size: x-large;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.list {
+  list-style: circle;
+  padding: 10px;
+}
+
+.table_nav tr td a {
+  padding: 10px;
+  text-decoration: none;
+  color: #d2738a;
+  font-family: ArcadeClassic;
+}
+
+.table_nav tr td {
+  padding: 8px;
+}
+/* .table_nav tr td:hover {
+  border-radius: 2px;
+  background-color: rgb(255, 237, 192);
+} */
+
+.border h2:hover {
+  border: 1px solid rgb(255, 237, 192);
+}
+
+.table_nav tr td:hover {
+  background-color: rgb(255, 236, 192);
+}
+
+#lfm_artist_name {
+  letter-spacing: 0.5px;
+}
+
+/* #lfm_album_name {
+}
+ */
+#lfm_song_name {
+  letter-spacing: 0.5px;
+}
+.sideblock {
+  width: auto;
+  font-family: ArcadeClassic;
+}
+
+.sideblock h2 {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.sideblock li {
+  font-style: italic;
+  text-align: center;
+  text-decoration: solid;
+  list-style-type: none;
+}
+
+/* .head_img {
+    width: 900px;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+} */
+
+#not_available {
+  color: darkgray;
+}
+
+.sm_rectangle ul li a {
+  color: white;
+  font-family: Iosevka;
+  font-style: italic;
+  text-align: center;
+  text-decoration: solid;
+  list-style-type: none;
+}
+
+.sm_rectangle ul li a:hover {
+  color: #d2738a;
+}
+
+.footer {
+  color: white;
+}
