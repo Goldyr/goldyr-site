@@ -1,4 +1,4 @@
-const baseURL = "https://blogs-backend-eta.vercel.app/api";
+//const baseURL = "https://blogs-backend-eta.vercel.app/api";
 
 const getTitles = async () => {
   console.log("getTitles");
@@ -27,4 +27,23 @@ const getTitles = async () => {
   return;
 };
 
-getTitles();
+const reading_File = async () => {
+  //const file = new File([""], "../blogs/test.txt")
+  //const reader = new FileReader()
+  //
+  //reader.readAsText(file)
+  //reader.onload = () => {
+  //  console.log(reader.result)
+  //}
+  //reader.onerror = function() {
+  //  console.log(reader.error);
+  //};
+  fetch("./test.txt")
+    .then(response => response.text)
+    .then(res => console.log(res))
+    .catch(error => console.error(error, "error reading /blogs"))
+}
+
+reading_File()
+
+//getTitles();

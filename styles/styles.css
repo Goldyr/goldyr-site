@@ -55,8 +55,7 @@ html::after {
   display: none;
 } /* Firefox */
 
-html {
-  background-image: url("../bg205.gif");
+html { background-image: url("../bg205.gif");
   height: 100%;
 }
 
@@ -190,6 +189,7 @@ html {
 #lfm_song_name {
   letter-spacing: 0.5px;
 }
+
 .sideblock {
   width: auto;
   font-family: ArcadeClassic;
