@@ -200,3 +200,6 @@
   return Marquee3k;
 
 }));
+
+//Either this or just put it in a <script> </script>
+Marquee3k.init();
