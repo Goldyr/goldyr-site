@@ -19,6 +19,7 @@ html::after {
   0% {
     transform: translateX(0px) translateY(0px);
   }
+
   100% {
     transform: translateX(-32px) translateY(-32px);
   }
@@ -28,6 +29,7 @@ html::after {
   0% {
     transform: translateX(0px) translateY(0px);
   }
+
   100% {
     transform: translateX(32px) translateY(-32px);
   }
@@ -45,17 +47,24 @@ html::after {
 
 ::-webkit-scrollbar {
   display: none;
-} /* chrome */
+}
+
+/* chrome */
 
 ::-ms-overflow-style {
   display: none;
-} /* IE and Edge */
+}
+
+/* IE and Edge */
 
 ::scrollbar-width {
   display: none;
-} /* Firefox */
+}
 
-html { background-image: url("../bg205.gif");
+/* Firefox */
+
+html {
+  background-image: url("../bg205.gif");
   height: 100%;
 }
 
@@ -133,10 +142,12 @@ html { background-image: url("../bg205.gif");
   width: 300px;
   padding: 10px;
 }
+
 .font {
   font-family: Iosevka;
   font-size: medium;
 }
+
 .image {
   width: 125px;
   height: 125px;
@@ -166,6 +177,7 @@ html { background-image: url("../bg205.gif");
 .table_nav tr td {
   padding: 8px;
 }
+
 /* .table_nav tr td:hover {
   border-radius: 2px;
   background-color: rgb(255, 237, 192);
@@ -232,4 +244,17 @@ html { background-image: url("../bg205.gif");
 
 .footer {
   color: white;
+}
+
+#blogs_titles {
+  flex-wrap: wrap;
+}
+
+#blogs_titles tr td div {
+  border: solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-color: rgb(255, 237, 192);
 }
