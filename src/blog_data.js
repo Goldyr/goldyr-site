@@ -4,7 +4,7 @@ let tags = document.querySelectorAll(`meta[name="tags"]`);
 let date = document.querySelector(`meta[name="date"]`);
 
 let body = document.querySelector("body");
-body.className = "main"
+let main_div = document.querySelector("div");
 
 let div = document.createElement("div");
 div.className = "rectangle";
@@ -12,23 +12,9 @@ div.style = `
 display:flex;
 flex-direction: row;
 `
-
-const nav = `
-<table class="table">
-        <tbody class="table_nav">
-          <tr>
-            <td><a href="../index.html">home</a></td>
-            <td><a id="blogs" href="../blogs.html">blogs</a></td>
-            <td>
-              <a href="../sources.html">sources</a>
-            </td>
-          </tr>
-        </tbody>
-</table>
-`
 //https://stackoverflow.com/a/3104237
-var doc = new DOMParser().parseFromString(nav, "text/html");
-body.prepend(doc.body.firstElementChild);
+//var doc = new DOMParser().parseFromString(nav, "text/html");
+//body.prepend(doc.body.firstElementChild);
 
 
 if (topic !== null) {
@@ -65,7 +51,22 @@ if (date !== null) {
   console.log(date);
 }
 
-//div.className = "sm_rectangle border font"
-//div.innerHTML = "sm_rectangle"
-body.firstElementChild.after(div);
-console.log(div)
+//TODO:Something like this to get titles from a .json
+//use this to get tags here
+//use m2dh to fill a file with the titles that it goes creating. Also add the date of the files in there
+//test something small in neocities to see if fetching a file from local actually works?
+
+const fetchTitles = async () => {
+  try {
+    const response = await fetch("../public/foo.json");
+    if (response.ok) {
+      return await response.json();
+    }
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+fetchTitles()
+  .then(res => console.log(res))
+  .catch((error) => console.error(error.message));
