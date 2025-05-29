@@ -167,7 +167,8 @@ html {
   padding: 10px;
 }
 
-.table_nav tr td a {
+/* .table_nav tr td a { */
+.nav_item {
   padding: 10px;
   text-decoration: none;
   color: #d2738a;
@@ -246,15 +247,6 @@ html {
   color: white;
 }
 
-#blogs_titles {
-  flex-wrap: wrap;
-}
-
-#blogs_titles tr td div {
-  border: solid;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 3px;
-  border-right-width: 3px;
-  border-color: rgb(255, 237, 192);
+.wide {
+  width: 800px;
 }

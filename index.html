@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="font" href="./ARCADECLASSIC.woff2" />
-    <link type="font" href="./iosevka-aile-bold.woff2" />
+    <link rel="prefetch" href="./header.png" as="image" type="image/png"/>
+    <link rel="prefetch" href="./ARCADECLASSIC.woff2" as="font" type="woff2"/>
+    <link rel="prefetch" href="./iosevka-aile-bold.woff2" as="font" type="woff2"/>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
     <title>Goldyr's Site</title>
     <link rel="icon" type="image/x-icon" href="./literally_me.jpg" />
@@ -24,10 +25,10 @@
       <table class="table">
         <tbody class="table_nav">
           <tr>
-            <td><a href="./index.html">home</a></td>
-            <td><a id="blogs" href="./blogs.html">blogs</a></td>
+            <td><a class="nav_item" href="./index.html">home</a></td>
+            <td><a class="nav_item" id="blogs" href="./blogs.html">blogs</a></td>
             <td>
-              <a href="./sources.html">sources</a>
+              <a class="nav_item" href="./sources.html">sources</a>
             </td>
           </tr>
         </tbody>
@@ -47,7 +48,7 @@
                   <li>-</li>
                   <li>Argentinian</li>
                   <li>-</li>
-                  <li>24</li>
+                  <li>25</li>
                 </ul>
               </div>
               <!-- Uses lastfm.js -->
@@ -59,8 +60,12 @@
                 <p id="lfm_album_name"></p>
               </div>
               <div class="sideblock border font">
-                <h2>?????</h2>
-                <p>placeholder</p>
+                <!-- <h2>Recent favorite song</h2> -->
+                <!-- <p id="lfm_fav_song_name"></p> -->
+                <!-- <p id="lfm_fav_artist_name"></p> -->
+                <!-- <image class="image" id="lfm_fav_album_img"></image> -->
+                <!-- <p id="lfm_fav_play_count"></p> -->
+                <h2>??????</h2>
               </div>
             </td>
           </tr>
@@ -70,7 +75,7 @@
               <div
                 id="slideshow"
                 class="rectangle border marquee3k"
-                data-speed="1.5"
+                data-speed="3"
                 data-reverse="false"
                 data-pausable="true"
               >
@@ -93,7 +98,7 @@
                 <h2>What is this?</h2>
                 <p>
                   This is a personal website where you will find fgc, music,
-                  coding and other type of content that I love and hate alike
+                  coding and other type of content that I like to talk and complain about.
                 </p>
               </div>
 
@@ -106,30 +111,19 @@
                   <li><a>EMAIL: enzoefb@hotmail.com</a></li>
                   <li><a>DISCORD: goldyr_</a></li>
                   <li><a href="https://github.com/Goldyr">GITHUB</a></li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/enzo-bogado/"
-                      >LINKEDIN</a
-                    >
-                  </li>
                 </ul>
               </div>
 
               <div class="sm_rectangle border font">
                 <h2>Latest Blog</h2>
-                <p>Something to fetch blogs from some backend</p>
-                <p>
-                  I already have some blogs on a mongo database, but not sure if
-                  I want to create something else from scratch since I have some
-                  notes that are not formatted
-                </p>
+                <a class="nav_item" href="public/music_recommendations_19.1.24.html">music_recomendations_19.1.24</a>
               </div>
 
               <div class="sm_rectangle border font">
                 <h2>Latest Project</h2>
-                <p>this site probably</p>
+                <a href="https://github.com/Goldyr/md2h" class="nav_item">md2h</a>
                 <p>
-                  Will try to setup something to fetch my latest project from
-                  github here
+                  converts markdown files to html, I found other alternatives to do this but might as well do my own worse but personalized version
                 </p>
               </div>
               <div class="sm_rectangle border font">
