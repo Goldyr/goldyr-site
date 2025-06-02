@@ -1,10 +1,12 @@
 # neocities personal website
 putting something out there
 
-## inspired by these two
+## inspired by these 
 [fauux](http://fauux.neocities.org)
 
 [melankorin](https://melankorin.net)
+
+[skate_story](https://skatestory.com)
 
 ## tools used 
 [lastfm](https://www.last.fm/api/show/user.getRecentTracks)
