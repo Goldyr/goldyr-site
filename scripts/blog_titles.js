@@ -9,8 +9,6 @@ const fetchTitles = async (url) => {
   }
 };
 
-//WARNING: depending where you host this this might need a small change
-const base_URL = "../public/";
 
 const getTitles = async () => {
   let title = document.createElement("h2");
@@ -24,7 +22,7 @@ const getTitles = async () => {
   tbody.appendChild(tr);
 
   try {
-    const fetch_response_json = await fetchTitles("public/html_data.json");
+    const fetch_response_json = await fetchTitles("../blogs/html_data.json");
 
     if (fetch_response_json.length === 0) throw Error("No blogs");
     else fetch_response_json.reverse()
@@ -44,7 +42,8 @@ const getTitles = async () => {
       p2.innerText = blog.date;
       // div.addEventListener('', () => window.location.assign(`${"public/"}${blog.title}.html`));
 
-      a.href = `${"public/"}${blog.title}.html`;
+      //NOTE: This is a link on blog_selection.html in ./ to ./blogs/html
+      a.href = `${"./blogs/"}${blog.title}.html`;
       a.style = "text-decoration: none; color: #FAFAFA"
       a.appendChild(div);
       div.appendChild(h2);

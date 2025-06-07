@@ -6,7 +6,7 @@ html::after {
   top: 0;
   width: calc(100% + 32px);
   height: calc(100% + 32px);
-  background-image: url("../scanlines.png");
+  background-image: url("../images/scanlines.png");
   background-position: 0 0;
   background-repeat: repeat;
   z-index: 10000000;
@@ -37,12 +37,12 @@ html::after {
 
 @font-face {
   font-family: Iosevka;
-  src: url("../iosevka-aile-bold.woff2");
+  src: url("../fonts/iosevka-aile-bold.woff2");
 }
 
 @font-face {
   font-family: ArcadeClassic;
-  src: url("../ARCADECLASSIC.woff2");
+  src: url("../fonts/ARCADECLASSIC.woff2");
 }
 
 ::-webkit-scrollbar {
@@ -64,7 +64,7 @@ html::after {
 /* Firefox */
 
 html {
-  background-image: url("../bg205.gif");
+  background-image: url("../images/bg205.gif");
   height: 100%;
 }
 
@@ -101,7 +101,7 @@ html {
 }
 
 .main .table .table_center {
-  background-image: url("../Static2.gif");
+  background-image: url("../images/Static2.gif");
   color: white;
   display: flex;
   padding: 20px;
@@ -111,7 +111,7 @@ html {
   margin: 10px;
   padding: 10px;
   border: 1px solid white;
-  background-image: url("../bg205.gif");
+  background-image: url("../images/bg205.gif");
 }
 
 .border h2 {
@@ -127,7 +127,7 @@ html {
 }
 
 .rectangle {
-  background-image: url("../bg205.gif");
+  background-image: url("../images/bg205.gif");
   width: auto;
   padding: 20px;
 }

@@ -8,10 +8,10 @@ putting something out there
 
 [skate_story](https://skatestory.com)
 
-## tools used 
+## tools 
 [lastfm](https://www.last.fm/api/show/user.getRecentTracks)
 
-[marquee3000](https://github.com/ezekielaquino/Marquee3000)>
+[marquee3000](https://github.com/ezekielaquino/Marquee3000)
 
 [retro](https://github.com/markdowncss/retro/tree/master)
 
