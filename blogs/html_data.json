@@ -28,5 +28,17 @@
 			"yap"
 		],
 		"date": "13.06.2025"
+	},
+	{
+		"title": "recommended_firsthalf_2025",
+		"description": "stuff I experienced and recommend in the first half of 2025",
+		"topic": "recommendations",
+		"tags": [
+			"games",
+			"music",
+			"series",
+			"movies"
+		],
+		"date": "27.08.2025"
 	}
 ]
