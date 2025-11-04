@@ -54,10 +54,10 @@ h3 {
   page-break-after: avoid;
 }
 
-a,
-a:visited {
-  color: #01ff70;
-}
+/* a, */
+/* a:visited { */
+/*   color: #01ff70; */
+/* } */
 
 a:hover,
 a:focus,
